@@ -25,7 +25,7 @@
 // let rate = prompt("Please enter your interest rate")
 // let time = prompt("Please enter the time in years")
 //
-// calculateSimpleInterest = function(p,r,t) {
+// function calculateSimpleInterest(p,r,t) {
 //     let simpleInterest = (p * r * t)/100
 //     console.log(simpleInterest)
 // }
@@ -44,7 +44,7 @@
 
 // let colors = ["Blue", "Orange", "Goldenrod"]
 //
-// let addColor = function(arr) {
+// function addColor(arr) {
 //     arr.unshift(prompt("Please add a color name"))
 //     console.log("Updated colors: " + arr)
 //
@@ -61,12 +61,54 @@
 // Use the Date object to calculate the difference in days between today and the event.
 //     Log the result to the console using: “Days until the event: “.
 
+// let date = prompt("Please enter a date (format YYYY-MM-DD: ")
+// const d = new Date()
+//
+//
+// function validDate(dateStr) {
+//     const dateRegex = /^\d{4}-\d{2}-\d{2}$/; // YYYY-MM-DD format
+//     if (!dateRegex.test(dateStr)) {
+//         return false;
+//     }
+// }
+//
+// while (validDate(date) === false) {
+//     date = prompt("Please enter a valid date (format YYYY-MM-DD: ")
+// }
+//
+// date = new Date(date)
+//
+// function calculateDaysUntil(date) {
+//     console.log(d.getTime() > date.getTime() ? "Days since your date: " + ((d.getTime()-date.getTime())/86400000) : "Days until your date: " + ((date.getTime()-d.getTime())/86400000))
+// }
+// calculateDaysUntil(date)
 
 
 
-
-
-
+// /*
+//
+// Doesn't Work but want to revisit at a later date T^T
+//
+// while (!date) {
+//     date = prompt("Please enter a date (format YYYY-MM-DD: ")
+// }
+//
+// let h1 = date.indexOf(4).toString()
+// let h2 = date.indexOf(7).toString()
+// let year = date.slice(0,4)
+// let month = date.slice(5,7)
+// let day = date.slice(8,10)
+//
+// while (date) {
+//     (h1.charCodeAt(0) !== 45 || h2.charCodeAt(0) !== 45)
+//          ? date = prompt("Please enter in correct format (YYYY-MM-DD): ")
+//          : (year === NaN || month === NaN || day === NaN)
+//              ?  date = prompt("Please enter a valid date (YYYY-MM-DD): ")
+//              : year < 1970
+//                  ? date = prompt("Date must be after 1970-01-01 (YYYY-MM-DD): ")
+//                  : date = new Date(date)
+// }
+// */
 
 
 
@@ -84,14 +126,23 @@
 // Error message if number not entered
 // Log the classification to the console using: “The temperature is: “
 
-
-
-
-
-
-
-
-
+// function classifyTemperature(temp) {
+//     let f = (temp * (9/5)) + 32
+//     console.log("The temperature is: ",
+//         f > 100
+//             ? "HOT!!!!"
+//             : f > 80
+//                 ? "Warm!"
+//                 : f < 40
+//                     ? "It's Cold..."
+//                     : "Chilly")
+// }
+//
+// let temp = parseInt(prompt("Please enter the temperature in C: "))
+// while (Number.isInteger(temp) === false) {
+//     temp = parseInt(prompt("Please enter a valid temp(C)!!!"))
+// }
+// classifyTemperature(temp)
 
 
 
@@ -105,12 +156,46 @@
 // Update the student’s age in the array of objects.
 //     Log the updated array to the console: “Updated students: ”
 
-
-
-
-
-
-
+// let students = [
+//     {
+//         name: 'Alice',
+//         age: 20
+//     },
+//     {
+//         name: 'Bob',
+//         age: 22
+//     },
+//     {
+//         name: 'Charles',
+//         age: 18
+//     },
+// ]
+//
+//
+// let name = prompt("Please enter students name to change")
+// let check1 = 0
+// while (check1 == 0) {
+//     for ( i = 0; i < students.length; i++) {
+//         name == students[i].name ? check1 = 1 : ""
+//     }
+//     !check1 ? name = prompt("Please enter a valid name!") : ""
+// }
+//
+// let newAge = parseInt(prompt("Please enter a new age for the student: "))
+// while (Number.isInteger(newAge) === false) {
+//     newAge = parseInt(prompt("Please enter a valid age"))
+// }
+//
+// const changeAge = (name, newAge) => {
+//     for (i = 0; i < students.length; i++) {
+//         students[i].name == name ? students[i].age = newAge : ""
+//     }
+// };
+//
+//
+// changeAge(name,newAge)
+//
+// console.log(students)
 
 
 
