@@ -52,19 +52,30 @@
 // })
 // console.log(newArray)
 
-//.sort() - strings only
-let fruits = ["Durian", "Apple", "Pineapple", "avacado"]
-//fruits.sort()
-let newFruits = fruits.map(el => {
-    return el.toLocaleLowerCase()
-})
-console.log(newFruits.sort())
+// //.sort() - strings only
+// let fruits = ["Durian", "Apple", "Pineapple", "avacado"]
+// //fruits.sort()
+// let newFruits = fruits.map(el => {
+//     return el.toLocaleLowerCase()
+// })
+// console.log(newFruits.sort())
+//
+// // You need to use a compare function if you want to sort numbers
+// let numbers = [10, 1, 100, 3, 34, 11]
+// numbers.sort(function(a,b) {
+//     // return a - b //ascending
+//     return b - a  //descending
+// })
+// console.log(numbers)
 
-// You need to use a compare function if you want to sort numbers
-let numbers = [10, 1, 100, 3, 34, 11]
-numbers.sort(function(a,b) {
-    // return a - b //ascending
-    return b - a  //descending
-})
-console.log(numbers)
+let arr = ['eggs','butter','flour']
 
+const addToShoppingList = (arr, item) => {
+    arr.push(item)
+    console.log("Updated shopping list: ", arr)
+
+}
+
+let newItem = 'milk'
+
+addToShoppingList(arr, newItem)

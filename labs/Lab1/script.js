@@ -206,13 +206,26 @@
 // ONLY use ternaries!!!!
 //     Log the result to the console using: “The grade classification is: “
 
-
-
-
-
-
-
-
+// const classifyGrade = a => {
+//     a >= 110
+//         ? console.log("You got above a 110, are you cheating??")
+//         : a >= 90
+//             ? console.log("The grade classification is: A")
+//             : a >= 80
+//                 ? console.log("The grade classification is: B")
+//                 : a >= 70
+//                     ? console.log("The grade classification is: C")
+//                     : a >= 60
+//                         ? console.log("The grade classification is: D")
+//                         : console.log("The grade classification is: F")
+// };
+//
+// let numGrade = parseInt(prompt("Please enter your number Grade above 0"))
+// while (numGrade <= 0 || isNaN(numGrade)) {
+//     numGrade = parseInt(prompt("Please enter a valid Grade"))
+// }
+//
+// classifyGrade(numGrade)
 
 
 // 8. Shopping List Operations
@@ -221,11 +234,16 @@
 //     Takes two arguments - the shopping list array and the prompted new item form user.
 //     Log the updated array to the console using: “Updated shopping list: “.
 
-
-
-
-
-
+// let arr = ['eggs','butter','flour']
+//
+// const addToShoppingList = (arr, item) => {
+//     arr.push(item)
+//     console.log("Updated shopping list: ", arr)
+// }
+//
+// let newItem = prompt("Please enter new item to add to the shopping list")
+//
+// addToShoppingList(arr, newItem)
 
 
 
@@ -234,15 +252,15 @@
 //     Use the Date object to get the current day.
 //     Log the day of the week to the console using: “Today is: “
 
-
-
-
-
-
-
-
-
-
+// let d = new Date()
+//
+// const dayOfWeek = d => {
+//     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+//     let day = days[d.getDay()]
+//     console.log("Today is:", day)
+// }
+//
+// dayOfWeek(d)
 
 
 // 10. How Long Until Graduation
@@ -257,9 +275,33 @@
 // Rough idea. Does not need to be 100% accurate but should be within a few days of actual answer.
 
 
-
-
-
+// let d = new Date()
+// let gradDate = new Date('2025-05-17')
+// let daysUntilGrad = (gradDate.getTime()-d.getTime())/86400000
+//
+//
+// const dayOfWeek = d => {
+//     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+//     let day = days[d.getDay()]
+//     console.log("Today is:", day)
+//
+//     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//
+//     d.getDate()%10 === 1
+//         ? suf = "st"
+//         : d.getDate()%10 === 2
+//             ? suf = "nd"
+//             : d.getDate()%10 === 3
+//                 ? suf = "rd"
+//                 : suf = "th"
+//
+//     console.log(d.getFullYear() + ", " + months[d.getMonth()] + " " + d.getDate() + suf)
+//
+//     console.log("And you have", daysUntilGrad, "days left in this web design program until graduation!")
+//
+// }
+//
+// dayOfWeek(d)
 
 
 
