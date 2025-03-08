@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Now Hiring!</title>
+    <link rel="icon" type="image/x-icon" href="./assets/JayKitchenIcon.jpeg">
+</head>
+<body>
+    <a style="margin-left: 20px" href="index.html">Jay's Kitchen</a>
+    <a href="#" target="_self">Now Hiring!</a>
+    <a href="menu.html" target="_self">Menu</a>
+
+    <div>
+        <p>
+
+        </p>
+    </div>
+
+    <form action="">
+        <label>First Name:
+            <input
+                type="text"
+                name="fName"
+                id=""
+                placeholder="Please enter your first name"
+                minlength="1"
+                maxlength="20"
+                pattern="[a-zA-Z]{1,20}"
+                title="This is required! Only use letters"
+                required
+            >
+        </label>
+
+        <label>Last Name:
+            <input
+                    type="text"
+                    name="lName"
+                    id=""
+                    placeholder="Please enter your last name"
+                    minlength="1"
+                    maxlength="20"
+            >
+        </label>
+        <br>
+        <label>Address Line 1:
+            <input
+                    type="text"
+                    name="Add1"
+                    id=""
+                    placeholder="Please enter your street address"
+                    required
+            >
+        </label>
+
+        <label>Address Line 2:
+            <input
+                    type="text"
+                    name="Add2"
+                    id=""
+                    placeholder="Please enter your unit number if available"
+            >
+        </label>
+        <br>
+        <label>City:
+            <input
+                    type="text"
+                    name="City"
+                    id=""
+                    placeholder="Please enter your first name"
+                    maxlength="30"
+                    pattern="[a-zA-Z]{1,30}"
+                    required
+            >
+        </label>
+
+        <label >
+            State:
+            <select name="state" id="">
+                <option value="TX">TX</option>
+                <option value="CA">CA</option>
+                <option value="WA">WA</option>
+                <option value="GA">GA</option>
+            </select>
+        </label>
+        <br>
+        <label >
+            Age:
+            <input
+                type="number"
+                name="age"
+                id=""
+                min="21"
+                max="99"
+                required
+            >
+        </label>
+        <br>
+        <label>
+            Phone Number:
+            <input
+                    type="tel"
+                    name="phone"
+                    id=""
+                    placeholder="XXX-XXX-XXXX"
+                    title="Pattern xxx-xxx-xxxx"
+                    required
+                    pattern ="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            >
+        </label>
+        <br>
+        <label>
+            Email:
+            <input
+                    type="email"
+                    name="eAddress"
+                    id=""
+                    placeholder="Please enter email"
+                    pattern ="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+            >
+        </label>
+        <br>
+        <label >
+            Password:
+            <input type="password"
+                name="pw"
+                id=""
+                minlength="8"
+                maxlength="12"
+                placeholder="Please enter a password"
+                title="At least 1 Uppercase, 1 Lowercase, 1 Number, 1 Special Character (@$!%*?&) "
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,12}$"
+                required
+            >
+        </label>
+        <br>
+        <label >
+            Marital Status:
+            <input type="radio" name="mStatus" id="" value="Single" checked>Single
+            <input type="radio" name="mStatus" id="" value="Married">Married
+            <input type="radio" name="mStatus" id="" value="Complicated">Complicated
+        </label>
+        <br>
+        <label >
+            Colors:
+            <input type="checkbox" name="c1" id="" value="blue"> Blue
+            <input type="checkbox" name="c2" id="" value="red"> Red
+            <input type="checkbox" name="c3" id="" value="cyan"> Cyan
+            <input type="checkbox" name="c4" id="" value="green"> Green
+            <input type="checkbox" name="c5" id="" value="purple"> Purple
+        </label>
+        <br>
+        <label >
+            Tell us more about yourself!
+            <br>
+            <textarea
+                name="description"
+                id=""
+                cols="50"
+                rows="5"
+                title="You're Fired! I mean Hired!"
+                maxlength="30"></textarea>
+        </label>
+
+        <br>
+        <button type="submit" >Submit!</button>
+
+        <button type="reset">Reset</button>
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
