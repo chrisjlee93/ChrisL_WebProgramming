@@ -1,0 +1,20 @@
+/*body {*/
+/*    background-color: red;*/
+/*} it works!*/
+
+.henny {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barriecito {
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.red {
+    color: red;
+}
+
