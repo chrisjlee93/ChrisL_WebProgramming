@@ -118,9 +118,9 @@ body, html {
 
 .menuD{
     margin: auto;
-    /*align-content: left;*/
     height: 300px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px
 }
 
 .menuI{
@@ -129,19 +129,25 @@ body, html {
     width: 100%;
 }
 
+
 #menuDes{
-    border: 1px solid #ccc;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4); /*shadow */
-    background-color: rgba(0, 0, 0, 0.54); /*slight transparency */
-    padding: 16px;
-    border-radius: 8px;
-    max-width: 400px;
-    margin: 20px auto;
-    align-content: center;
+
     height: 300px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.54);
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* top, middle, bottom */
+    justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+    #menuDes {
+        max-width: 400px;
+        margin: 20px auto;
+    }
 }
 
 #menuDescription {
@@ -161,6 +167,19 @@ body, html {
 #price {
     align-self: flex-end;
 }
+
+@media (min-width: 992px) {
+    #menuDes {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .menuD {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 
 
 /*Better way to do this maybe? I'll look it up later'*/

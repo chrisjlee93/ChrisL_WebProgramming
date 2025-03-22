@@ -32,7 +32,7 @@ const menuItems = [
         imgG: "./assets/MeatStuffedPumpkin.png",
         imgR: "./assets/MPumpkinReal.png",
         alt: "Meat Stuffed Pumpkin",
-        desc: "Pump King Jack Skellington!",
+        desc: "Delicious and creamy vegetables, mixed savory and tender cuts of meat. Whats not to love!",
         price: formatter.format(18)
     },
     {
