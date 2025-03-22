@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Wilderness Cafe</title>
+    <!--    Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <!--    Font awesome-->
+    <script src="https://kit.fontawesome.com/11c078eecf.js" crossorigin="anonymous"></script>
+    <!--    Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/korok.jpg">
+    <!--    Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<nav class="navbar navbar-expand-lg sticky-top" style="background-color: #86ba55">
+    <div class="container-fluid">
+        <img src="./assets/korok.jpg" alt="Bootstrap" width="30" height="24" style="border-radius: 50%">
+        <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 10px">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active tiny5-regular" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active tiny5-regular" aria-current="page" href="#" target="_self">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active tiny5-regular" aria-current="page" href="hiring.html" target="_self">Now Hiring!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="containermenu">
+</div>
+
+<div style="margin-top: 50px; margin-bottom: 100px; text-align: center" >
+    <h1  class="tiny5-regular outlined-text" style="color: white">Menu</h1>
+    <p class="tiny5-regular outlined-text" style="font-size: 20px">Compare our real life creations to our theory crafted recipes. Feel free to drop in any comments and feedback after dining with us</p>
+
+</div>
+
+<div style="text-align: center">
+
+<div class="row g-3">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-2 col-sm-12 menuD" >
+        <img id="menuInGame" class="menuI" src="" alt="">
+    </div>
+    <div id="menuDes" class="col-lg-4 col-sm-12">
+        <p id="menuName" class="tiny5-regular outlined-text" style="font-size: 30px"> </p>
+        <p id="menuDescription" class="tiny5-regular outlined-text"> </p>
+        <p id="price" class="tiny5-regular outlined-text">  </p>
+    </div>
+    <div class="col-lg-2 col-sm-12 menuD" >
+        <img id="menuReal" class="menuI" src="./assets/FriedDrumstickReal.png" alt="Fried Drumsticks">
+    </div>
+    <div class="col-lg-2"></div>
+</div>
+
+
+<!--    Buttons using font Awesome!-->
+    <div style="margin-top: 50px">
+    <button id="prevMenu" type="button" class="btn btn-lg move"><i class="fa-solid fa-circle-chevron-left fa-4x"></i></button>
+    <button id="nextMenu" type="button" class="btn btn-lg move"><i class="fa-solid fa-circle-chevron-right fa-4x"></i></button>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="menu.js"></script>
+</body>
+</html>
