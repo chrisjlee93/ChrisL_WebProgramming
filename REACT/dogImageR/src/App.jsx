@@ -31,12 +31,14 @@ const App = () => {
                 setImagePath(response.data.message)
                 console.log("Response: ", response.data.message)
             })
-
     }
+
     return (
         <>
             <h1>Dog Image Generator</h1>
+            <div>
             <button onClick={handleClick}>Click Me</button>
+            </div>
             <img src={imagePath} alt=""/>
         </>
         
