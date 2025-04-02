@@ -1,0 +1,39 @@
+body {
+  background-color: #b0a8a8;
+}
+
+#main {
+  border: black 4px ridge;
+  padding: 50px;
+  margin: 50px;
+  box-shadow: 3px 3px 3px black;
+  background-color: rgba(174, 153, 239, 0.78);
+}
+
+.fas {
+  color: #5f1db0;
+  font-size: 8em;
+  margin: 10px;
+}
+
+#butt{
+  font-size: 24px;
+  background-color: #ffffff;
+  color: #1c1e1e;
+  padding: 12px 24px;
+  border: 2px solid #242828;
+  border-radius: 6px;
+  text-shadow: 0 0 5px #0ff;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+  transition: 0.2s ease;
+}
+
+#butt:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+
+#butt:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px #27ae60;
+}
