@@ -32,16 +32,15 @@ function App() {
         <>
             <div className="background">
             <h1>
-            SWAPI
+                SWAPI
             </h1>
             <h2>The Star Wars API</h2>
 
             <button onClick={handleSubmit}>Submit</button>
             <button onClick={handleReset}>Reset</button>
 
-                <div style={{ display: visible ? 'block' : 'none'}}>
+                <div className="tableDiv" style={{ display: visible ? 'block' : 'none'}}>
                     <Table data = {data}/>
-                    <h1>Hi</h1>
                 </div>
         </div>
         </>

@@ -6,5 +6,39 @@
   object-fit: cover;
 }
 
+.tableDiv {
 
+  margin: 50px 100px;
+  flex: auto;
 
+}
+
+table {
+
+  background-color: rgba(255, 0, 0, 0.27);
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  margin: 20px;
+  /*gets rid of spacing between cells*/
+  border-spacing: 0px;
+
+}
+
+th, td {
+  margin: 0;
+  border: 2px solid black;
+  padding: 6px;
+  text-align: center;
+}
+
+th {
+  background-color: rgba(26, 26, 26, 0.63);
+}
+
+td {
+  background-color: rgba(255, 255, 255, 0.32);
+  /*outline text*/
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
