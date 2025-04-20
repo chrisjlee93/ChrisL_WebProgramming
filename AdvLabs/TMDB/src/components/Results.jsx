@@ -86,12 +86,22 @@ const Results = ({ query }) => {
 
     return (
         <div style={{ padding: 16, textAlign: "center" }}>
-            <h1>{query ? `Results for “${query}”` : "Now Playing"}</h1>
+            <h1 >{query ? `Results for “${query}”` : "Now Playing"}</h1>
 
             {loading ? (
                 <p>Loading…</p>
             ) : noResults ? (
-                <ErrorCard search={query} />
+                    <div
+                        style={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            gap: 16,
+                            justifyContent: "center"
+                        }}
+                    >
+                        <ErrorCard search={query} />
+                    </div>
+
             ) : (
                 <div
                     style={{

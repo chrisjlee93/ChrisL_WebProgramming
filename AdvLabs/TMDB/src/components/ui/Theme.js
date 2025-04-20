@@ -2,6 +2,17 @@ import {createTheme } from '@mui/material/styles'
 import movieImage from "../../assets/MovieBackground.avif"
 
 const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#ffffff',        // blue
+        },
+        secondary: {
+            main: '#170733',        // pink
+        },
+        background: {
+            default: '#fafafa',
+        },
+    },
     components: {
         MuiCssBaseline: {
             styleOverrides: {

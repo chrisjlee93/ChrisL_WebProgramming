@@ -3,13 +3,9 @@ import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import Landing from "./Landing.jsx";
+import {Link} from "react-router-dom";
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -56,10 +52,12 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar({query, onQueryChange}) {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="fixed" sx={{ top: 0}}>
+            <AppBar position="fixed" sx={(theme) => ({
+                top: 0,
+                backgroundColor: theme.palette.secondary.main,
+            })}>
 
                 <Toolbar>
-
                         <div className="App">
                             <Link to="/landing" className="hlink">Home</Link>
                             <Link to="/results" className="hlink">Now Playing</Link>
